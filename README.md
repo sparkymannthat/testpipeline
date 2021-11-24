@@ -1,1 +1,7 @@
-# testpipeline
+name: $(Date:yyyyMMdd)$(Rev:.r)
+variables:
+  var1: value1
+jobs:
+- job: One
+  steps:
+  - script: echo First step hurray scp!
